@@ -11,6 +11,16 @@
 		836BEE402B047043004B8167 /* PWRecordKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836BEE352B047042004B8167 /* PWRecordKit.framework */; };
 		836BEE452B047043004B8167 /* PWRecordKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836BEE442B047043004B8167 /* PWRecordKitTests.swift */; };
 		836BEE462B047043004B8167 /* PWRecordKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 836BEE382B047042004B8167 /* PWRecordKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		836ECA402B0485CD008F1034 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836ECA3F2B0485CD008F1034 /* AudioRecorder.swift */; };
+		836ECA432B0490E3008F1034 /* DefaultAudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836ECA422B0490E3008F1034 /* DefaultAudioRecorder.swift */; };
+		836ECA4B2B049320008F1034 /* RecordTargetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836ECA4A2B049320008F1034 /* RecordTargetApp.swift */; };
+		836ECA4D2B049320008F1034 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836ECA4C2B049320008F1034 /* ContentView.swift */; };
+		836ECA4F2B049321008F1034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836ECA4E2B049321008F1034 /* Assets.xcassets */; };
+		836ECA522B049321008F1034 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836ECA512B049321008F1034 /* Preview Assets.xcassets */; };
+		836ECA572B0493B8008F1034 /* PWRecordKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836BEE352B047042004B8167 /* PWRecordKit.framework */; };
+		836ECA582B0493B8008F1034 /* PWRecordKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 836BEE352B047042004B8167 /* PWRecordKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		836ECA5E2B0493D4008F1034 /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836ECA5D2B0493D4008F1034 /* RecordViewModel.swift */; };
+		836ECA632B049A4F008F1034 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836ECA622B049A4F008F1034 /* RecordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,7 +31,28 @@
 			remoteGlobalIDString = 836BEE342B047042004B8167;
 			remoteInfo = PWRecordKit;
 		};
+		836ECA592B0493B8008F1034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 836BEE2C2B047042004B8167 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 836BEE342B047042004B8167;
+			remoteInfo = PWRecordKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		836ECA5B2B0493B8008F1034 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				836ECA582B0493B8008F1034 /* PWRecordKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		836BEE352B047042004B8167 /* PWRecordKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PWRecordKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +60,15 @@
 		836BEE392B047042004B8167 /* PWRecordKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PWRecordKit.docc; sourceTree = "<group>"; };
 		836BEE3F2B047043004B8167 /* PWRecordKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PWRecordKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		836BEE442B047043004B8167 /* PWRecordKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWRecordKitTests.swift; sourceTree = "<group>"; };
+		836ECA3F2B0485CD008F1034 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		836ECA422B0490E3008F1034 /* DefaultAudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAudioRecorder.swift; sourceTree = "<group>"; };
+		836ECA482B049320008F1034 /* RecordTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		836ECA4A2B049320008F1034 /* RecordTargetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTargetApp.swift; sourceTree = "<group>"; };
+		836ECA4C2B049320008F1034 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		836ECA4E2B049321008F1034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		836ECA512B049321008F1034 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		836ECA5D2B0493D4008F1034 /* RecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModel.swift; sourceTree = "<group>"; };
+		836ECA622B049A4F008F1034 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +87,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		836ECA452B049320008F1034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836ECA572B0493B8008F1034 /* PWRecordKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,7 +103,9 @@
 			children = (
 				836BEE372B047042004B8167 /* PWRecordKit */,
 				836BEE432B047043004B8167 /* PWRecordKitTests */,
+				836ECA492B049320008F1034 /* RecordTarget */,
 				836BEE362B047042004B8167 /* Products */,
+				836ECA562B0493B8008F1034 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +114,7 @@
 			children = (
 				836BEE352B047042004B8167 /* PWRecordKit.framework */,
 				836BEE3F2B047043004B8167 /* PWRecordKitTests.xctest */,
+				836ECA482B049320008F1034 /* RecordTarget.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +122,7 @@
 		836BEE372B047042004B8167 /* PWRecordKit */ = {
 			isa = PBXGroup;
 			children = (
+				836ECA3D2B048585008F1034 /* Record */,
 				836BEE382B047042004B8167 /* PWRecordKit.h */,
 				836BEE392B047042004B8167 /* PWRecordKit.docc */,
 			);
@@ -83,6 +135,75 @@
 				836BEE442B047043004B8167 /* PWRecordKitTests.swift */,
 			);
 			path = PWRecordKitTests;
+			sourceTree = "<group>";
+		};
+		836ECA3D2B048585008F1034 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				836ECA412B0490CF008F1034 /* AudioRecorder */,
+				836ECA3E2B048597008F1034 /* Protocols */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		836ECA3E2B048597008F1034 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				836ECA3F2B0485CD008F1034 /* AudioRecorder.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		836ECA412B0490CF008F1034 /* AudioRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				836ECA422B0490E3008F1034 /* DefaultAudioRecorder.swift */,
+			);
+			path = AudioRecorder;
+			sourceTree = "<group>";
+		};
+		836ECA492B049320008F1034 /* RecordTarget */ = {
+			isa = PBXGroup;
+			children = (
+				836ECA5F2B049A34008F1034 /* View */,
+				836ECA5C2B0493C6008F1034 /* ViewModel */,
+				836ECA4A2B049320008F1034 /* RecordTargetApp.swift */,
+				836ECA4C2B049320008F1034 /* ContentView.swift */,
+				836ECA4E2B049321008F1034 /* Assets.xcassets */,
+				836ECA502B049321008F1034 /* Preview Content */,
+			);
+			path = RecordTarget;
+			sourceTree = "<group>";
+		};
+		836ECA502B049321008F1034 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				836ECA512B049321008F1034 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		836ECA562B0493B8008F1034 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		836ECA5C2B0493C6008F1034 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				836ECA5D2B0493D4008F1034 /* RecordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		836ECA5F2B049A34008F1034 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				836ECA622B049A4F008F1034 /* RecordView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +256,25 @@
 			productReference = 836BEE3F2B047043004B8167 /* PWRecordKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		836ECA472B049320008F1034 /* RecordTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 836ECA532B049321008F1034 /* Build configuration list for PBXNativeTarget "RecordTarget" */;
+			buildPhases = (
+				836ECA442B049320008F1034 /* Sources */,
+				836ECA452B049320008F1034 /* Frameworks */,
+				836ECA462B049320008F1034 /* Resources */,
+				836ECA5B2B0493B8008F1034 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				836ECA5A2B0493B8008F1034 /* PBXTargetDependency */,
+			);
+			name = RecordTarget;
+			productName = RecordTarget;
+			productReference = 836ECA482B049320008F1034 /* RecordTarget.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +289,9 @@
 						CreatedOnToolsVersion = 15.0.1;
 					};
 					836BEE3E2B047043004B8167 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					836ECA472B049320008F1034 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
@@ -168,6 +311,7 @@
 			targets = (
 				836BEE342B047042004B8167 /* PWRecordKit */,
 				836BEE3E2B047043004B8167 /* PWRecordKitTests */,
+				836ECA472B049320008F1034 /* RecordTarget */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +331,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		836ECA462B049320008F1034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836ECA522B049321008F1034 /* Preview Assets.xcassets in Resources */,
+				836ECA4F2B049321008F1034 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,6 +347,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836ECA402B0485CD008F1034 /* AudioRecorder.swift in Sources */,
+				836ECA432B0490E3008F1034 /* DefaultAudioRecorder.swift in Sources */,
 				836BEE3A2B047042004B8167 /* PWRecordKit.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +361,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		836ECA442B049320008F1034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836ECA4D2B049320008F1034 /* ContentView.swift in Sources */,
+				836ECA632B049A4F008F1034 /* RecordView.swift in Sources */,
+				836ECA4B2B049320008F1034 /* RecordTargetApp.swift in Sources */,
+				836ECA5E2B0493D4008F1034 /* RecordViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -213,6 +379,11 @@
 			isa = PBXTargetDependency;
 			target = 836BEE342B047042004B8167 /* PWRecordKit */;
 			targetProxy = 836BEE412B047043004B8167 /* PBXContainerItemProxy */;
+		};
+		836ECA5A2B0493B8008F1034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 836BEE342B047042004B8167 /* PWRecordKit */;
+			targetProxy = 836ECA592B0493B8008F1034 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -407,6 +578,7 @@
 		836BEE4D2B047043004B8167 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ERT3ZH7BA7;
@@ -423,6 +595,7 @@
 		836BEE4E2B047043004B8167 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ERT3ZH7BA7;
@@ -431,6 +604,66 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.polywinterdisign.PWRecordKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		836ECA542B049321008F1034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RecordTarget/Preview Content\"";
+				DEVELOPMENT_TEAM = ERT3ZH7BA7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "A message that tells the user why the app is requesting access to the device’s microphone.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.polywinterdisign.RecordTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		836ECA552B049321008F1034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RecordTarget/Preview Content\"";
+				DEVELOPMENT_TEAM = ERT3ZH7BA7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "A message that tells the user why the app is requesting access to the device’s microphone.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.polywinterdisign.RecordTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +695,15 @@
 			buildConfigurations = (
 				836BEE4D2B047043004B8167 /* Debug */,
 				836BEE4E2B047043004B8167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		836ECA532B049321008F1034 /* Build configuration list for PBXNativeTarget "RecordTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				836ECA542B049321008F1034 /* Debug */,
+				836ECA552B049321008F1034 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
